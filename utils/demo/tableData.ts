@@ -1,7 +1,7 @@
 interface ITableData{
   
   name: string
-  amount: number
+  cpf: string
 
  
 }
@@ -12,7 +12,7 @@ const tableData: ITableData[] =  [
   
     name: 'Chandler Jacobi',
 
-    amount: 989.4,
+    cpf: "000000000-00",
   
   
   },
@@ -20,57 +20,57 @@ const tableData: ITableData[] =  [
    
     name: 'Monserrat Marquardt',
 
-    amount: 471.44,
+    cpf:"000000000-00",
     
     
   },
   {
    
     name: 'Lonie Wyman',
-    amount: 934.24,
+    cpf: "000000000-00",
    
   },
   {
    
     name: 'Corine Abernathy',
  
-    amount: 351.28,
+    cpf:"000000000-00",
 
   },
   {
  
     name: 'Lorenz Botsford',
 
-    amount: 355.3,
+    cpf: "000000000-00",
    
   },
   {
 
     name: 'Everette Botsford',
   
-    amount: 525.42,
+    cpf:"000000000-00",
     
    
   },
   {
     name: 'Marilou Beahan',
-    amount: 414.99,
+    cpf: "000000000-00",
   },
   {
     name: 'Ceasar Sauer',
-    amount: 488.0,
+    cpf: "000000000-00",
     
   },
   {
     
     name: 'Rae McDermott',
 
-    amount: 502.69,
+    cpf:"000000000-00",
   
   },
   {
     name: 'Mable Steuber',
-    amount: 911.09,
+    cpf: "000000000-00",
   },
 
 ]

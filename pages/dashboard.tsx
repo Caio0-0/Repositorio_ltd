@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { Input, HelperText, Label, Select, Textarea,Button } from '@roketid/windmill-react-ui'
+import { Input, HelperText, Label, Select, Textarea,Button} from '@roketid/windmill-react-ui'
+import Modalpages from "example/components/Modalpages"
 import CTA from 'example/components/CTA'
 import PageTitle from 'example/components/Typography/PageTitle'
 import SectionTitle from 'example/components/Typography/SectionTitle'
@@ -11,10 +12,8 @@ import { MailIcon } from 'icons'
 function Forms() {
   return (
     <Layout>
-      <PageTitle>Deshboard</PageTitle>
+      <PageTitle>Dashboard</PageTitle>
 
-
-     
         
     </Layout>
   )

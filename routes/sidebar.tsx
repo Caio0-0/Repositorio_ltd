@@ -24,11 +24,10 @@ export function routeIsActive (pathname: String, route: IRoute): boolean {
 }
 
 const routes: IRoute[] = [
-  {
-    path: '/', // the url
-    icon: 'HomeIcon', // the component being exported from icons/index.js
-    name: 'Home', // name that appear in Sidebar
-    exact: true,
+   {
+    path: '/dashboard',
+    icon: 'ChartsIcon',
+    name: 'Deshbord',
   },
   {
     path: '/make-appointment',
@@ -40,11 +39,7 @@ const routes: IRoute[] = [
     icon: 'PeopleIcon',
     name: 'Prontuario',
   },
-  {
-    path: '/dashboard',
-    icon: 'ChartsIcon',
-    name: 'Deshbord',
-  }
+
   
 ]
 

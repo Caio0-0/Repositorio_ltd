@@ -70,12 +70,12 @@ function Forms() {
     <Layout>
       <PageTitle>Prontuario</PageTitle>
 
-        <TableContainer>
+        <TableContainer className='mb-10 shadow-md '>
           <Table>
             <TableHeader>
               <tr>
                 <TableCell>Pacientes</TableCell>
-                <TableCell>--------</TableCell>
+                <TableCell>CPF</TableCell>
                 <TableCell>Ver Prontuario</TableCell>
               </tr>
             </TableHeader>
@@ -91,7 +91,7 @@ function Forms() {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <span className="text-sm">$ {user.amount}</span>
+                    <span className="text-sm">{user.cpf}</span>
                   </TableCell>
                   <TableCell>
                     <a  className="flex items-center w-30 justify-center p-2 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"href="/medical-record">Prontuario</a>
@@ -100,9 +100,6 @@ function Forms() {
               ))}
             </TableBody>
           </Table>
-        <TableFooter>
-          <Pagination totalResults={10} resultsPerPage={4} onChange={() => {}} label="Table navigation" />
-        </TableFooter>
       </TableContainer>
      
         
