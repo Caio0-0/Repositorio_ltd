@@ -68,7 +68,7 @@ function Forms() {
 
   return (
     <Layout>
-      <PageTitle>Prontuario</PageTitle>
+      <PageTitle>Prontuário</PageTitle>
 
         <TableContainer className='mb-10 shadow-md '>
           <Table>
@@ -76,7 +76,7 @@ function Forms() {
               <tr>
                 <TableCell>Pacientes</TableCell>
                 <TableCell>CPF</TableCell>
-                <TableCell>Ver Prontuario</TableCell>
+                <TableCell>Ver Prontuário</TableCell>
               </tr>
             </TableHeader>
             <TableBody>
@@ -94,7 +94,7 @@ function Forms() {
                     <span className="text-sm">{user.cpf}</span>
                   </TableCell>
                   <TableCell>
-                    <a  className="flex items-center w-30 justify-center p-2 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"href="/medical-record">Prontuario</a>
+                    <a  className="flex items-center w-30 justify-center p-2 text-sm font-semibold text-purple-100 bg-blue-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"href="/medical-record">Prontuário</a>
                   </TableCell>
                 </TableRow>
               ))}

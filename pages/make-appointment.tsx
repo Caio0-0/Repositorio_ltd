@@ -18,16 +18,16 @@ function Forms() {
       <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
         <Label>
           <span>Nome completo</span>
-          <Input className="mt-1" placeholder="Jane Doe" />
+          <Input className="mt-1" placeholder="" />
         </Label>
 
         <Label className="mt-4" >
           <span>Email</span>
-          <Input className="mt-1" placeholder="JaneDoe@gmail.com" />
+          <Input className="mt-1" placeholder="@gmail.com" />
         </Label>
         
          <div className='mt-4'>
-          <Label>Preferencia do atentimento</Label>
+          <Label>Preferência do atentimento</Label>
           <div className="mt-2">
             <Label radio>
               <Input type="radio" value="presencial" name="accountType" />
@@ -41,7 +41,7 @@ function Forms() {
          </div>
          
          <Label className="mt-4" >
-          <span>Numero de telefone</span>
+          <span>Número de telefone</span>
           <Input className="mt-1" placeholder="(DDD) XXXX-XXXX" />
         </Label>
 
@@ -54,7 +54,7 @@ function Forms() {
 
         <Label className="mt-4" >
           <span>CPF</span>
-          <Input className="mt-1" placeholder="" />
+          <Input className="mt-1" placeholder="000.000.000-00" />
         </Label>
 
         <Label className="mt-4" >

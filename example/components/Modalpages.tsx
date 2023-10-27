@@ -11,12 +11,12 @@ function ModalPage() {
   return (
     <>
       <div>
-        <Button onClick={openModal}>Proximo</Button>
+        <Button onClick={openModal}>Próximo</Button>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <ModalHeader>Veja que todos seus dados estão corretos</ModalHeader>
+        <ModalHeader>Verifique seus dados</ModalHeader>
         <ModalBody>
-           Verifique que seus dados estão corretos para serem enviados, para que seu agendandamento seja feito com suceso
+           Verifique se os seus dados estão corretos para o envio do agendamento.
         </ModalBody>
         <ModalFooter>
           <Button className="w-full sm:w-auto" layout="outline" onClick={closeModal}>

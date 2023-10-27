@@ -32,7 +32,7 @@ function LoginPage() {
                 <Input
                   className='mt-1'
                   type='email'
-                  placeholder='123456789'
+                  placeholder=''
                 />
               </Label>
 
@@ -41,7 +41,7 @@ function LoginPage() {
                 <Input
                   className='mt-1'
                   type='password'
-                  placeholder='***************'
+                  placeholder='**********'
                 />
               </Label>
 

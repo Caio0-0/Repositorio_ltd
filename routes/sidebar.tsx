@@ -37,7 +37,7 @@ const routes: IRoute[] = [
   {
     path: '/patients',
     icon: 'PeopleIcon',
-    name: 'Prontuario',
+    name: 'Prontuário',
   },
 
   
