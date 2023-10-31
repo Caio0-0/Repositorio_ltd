@@ -27,7 +27,6 @@ function Forms() {
   return (
     <Layout>
             <SectionTitle>Entrevista Inicial</SectionTitle>
-
       <div className="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
          <Label className="mt-4">
           <span>1.Situação de vida atual. Com quem você vive? Como é o local?</span>
@@ -122,7 +121,7 @@ function Forms() {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <ModalHeader>Responder questionário(Opcional)</ModalHeader>
           <ModalBody>
-            Se desejar responder clique em Aceitar e o questionário passará a ser obrigátorio, se não clique em Não aceitar.
+            Se desejar responder uma série de 20 perguntas clique em Aceitar e o questionário passará a ser obrigátorio, se não clique em Não aceitar.
           </ModalBody>
           <ModalFooter>
             <Button className="w-full sm:w-auto" layout="outline" onClick={closeModal}>Não aceitar</Button>

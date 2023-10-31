@@ -59,14 +59,14 @@ const Forms: React.FC = () => {
 
   return (
     <Layout>
-      <PageTitle>Protuario do paciente</PageTitle>
+      <PageTitle>Protuário do paciente</PageTitle>
       <div className="flex items-center">
         <Label className="w-full">
           <span>Relatório da sessão:</span>
           <Textarea
             className="mt-1 h-60"
             rows="nnp"
-            placeholder="Enter some long form content."
+            placeholder="Sua reposta"
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
           />

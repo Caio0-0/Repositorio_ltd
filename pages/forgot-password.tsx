@@ -24,17 +24,17 @@ function ForgotPassword() {
           <main className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
             <div className="w-full">
               <h1 className="mb-4 text-xl font-semibold text-gray-700 dark:text-gray-200">
-                Esqueceu sua senha
+                Recuperar senha
               </h1>
 
               <Label>
                 <span>Email</span>
-                <Input className="mt-1" placeholder="Jane Doe" />
+                <Input className="mt-1" placeholder="@gmail.com" />
               </Label>
 
             <Link href="/login" passHref={true}>
               <Button tag={"button"} block className="mt-4">
-                Recuperar senha
+                Enviar
               </Button>
             </Link>
             </div>

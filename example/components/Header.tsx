@@ -79,11 +79,11 @@ function Header() {
             >
               <DropdownItem tag="a" href="#">
                 <OutlinePersonIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                <span>Prontuaris</span>
+                <span>Prontuário</span>
               </DropdownItem>
               <DropdownItem onClick={() => alert('Log out!')}>
                 <OutlineLogoutIcon className="w-4 h-4 mr-3" aria-hidden="true" />
-                <span>Log out</span>
+                <span>Sair</span>
               </DropdownItem>
             </Dropdown>
           </li>

@@ -10,68 +10,12 @@ interface ITableData{
 const tableData: ITableData[] =  [
   {
   
-    name: 'Chandler Jacobi',
+    name: 'Nome do paciente',
 
-    cpf: "000000000-00",
+    cpf: "526.401.331-71",
   
   
-  },
-  {
-   
-    name: 'Monserrat Marquardt',
-
-    cpf:"000000000-00",
-    
-    
-  },
-  {
-   
-    name: 'Lonie Wyman',
-    cpf: "000000000-00",
-   
-  },
-  {
-   
-    name: 'Corine Abernathy',
- 
-    cpf:"000000000-00",
-
-  },
-  {
- 
-    name: 'Lorenz Botsford',
-
-    cpf: "000000000-00",
-   
-  },
-  {
-
-    name: 'Everette Botsford',
-  
-    cpf:"000000000-00",
-    
-   
-  },
-  {
-    name: 'Marilou Beahan',
-    cpf: "000000000-00",
-  },
-  {
-    name: 'Ceasar Sauer',
-    cpf: "000000000-00",
-    
-  },
-  {
-    
-    name: 'Rae McDermott',
-
-    cpf:"000000000-00",
-  
-  },
-  {
-    name: 'Mable Steuber',
-    cpf: "000000000-00",
-  },
+  }
 
 ]
 
