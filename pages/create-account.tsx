@@ -29,15 +29,15 @@ function CrateAccount() {
               </h1>
               <Label>
                 <span>Matricula</span>
-                <Input className="mt-1" type="email" placeholder="" />
+                <Input className="mt-1" type="email" placeholder="john@doe.com" />
               </Label>
               <Label className="mt-4">
                 <span>Senha</span>
-                <Input className="mt-1" placeholder="**********" type="password" />
+                <Input className="mt-1" placeholder="***************" type="password" />
               </Label>
               <Label className="mt-4">
                 <span>Confirma senha</span>
-                <Input className="mt-1" placeholder="**********" type="password" />
+                <Input className="mt-1" placeholder="***************" type="password" />
               </Label>
 
               <Label className="mt-6" check>
@@ -52,7 +52,7 @@ function CrateAccount() {
                   passHref={true}
                 >
                 <Button block className="mt-4">
-                  Criar conta
+                  Crear conta
                 </Button>
               </Link>
 

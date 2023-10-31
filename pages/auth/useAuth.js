@@ -29,8 +29,9 @@ export const AuthProvider = ({ children }) => {
       // Salvar as credenciais no localStorage
       localStorage.setItem('credentials', JSON.stringify({ matricula, senha }));
     } else {
-      // Senão, limpe o estado do usuário
+      
       setUser(null);
+      console.log("ERRO")
     }
   };
 
