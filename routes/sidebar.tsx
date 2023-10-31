@@ -27,7 +27,7 @@ const routes: IRoute[] = [
    {
     path: '/dashboard',
     icon: 'ChartsIcon',
-    name: 'Deshbord',
+    name: 'Dashboard',
   },
   {
     path: '/make-appointment',

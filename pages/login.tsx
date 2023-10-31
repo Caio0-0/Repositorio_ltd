@@ -84,7 +84,7 @@ function LoginPage() {
               </Label>
 
               <Link href='/' passHref={true}>
-                <Button className='mt-4' block>
+                <Button className='mt-4' block onClick={handleLogin}>
                   Entrar
                 </Button>
               </Link>
