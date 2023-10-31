@@ -2,6 +2,9 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { useState } from 'react'
+import { setCookie, parseCookies } from 'nookies'
+
 import { Label, Input, Button, WindmillContext } from '@roketid/windmill-react-ui'
 
 
@@ -9,6 +12,35 @@ function LoginPage() {
   const { mode } = useContext(WindmillContext)
   const imgSource = mode === 'dark' ? '/assets/img/login-office-dark.jpeg' : '/assets/img/login-office.jpeg'
 
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const objeto = {
+    username: username,
+    password: password,
+  };
+
+  const handleLogin = async () => {
+    const cookies = parseCookies();
+    console.log({ cookies })
+
+    setCookie(null, 'admin', 'true', {
+      maxAge: 30 * 24 * 60 * 60,
+      path: '/',
+    })
+
+    fetch("http://192.168.43.82:8080/home/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(objeto),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data)
+      });
+  };
   return (
     <div className='flex items-center min-h-screen p-6 bg-gray-50 dark:bg-gray-900'>
       <div className='flex-1 h-full max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-xl dark:bg-gray-800'>
@@ -31,8 +63,11 @@ function LoginPage() {
                 <span>Matricula</span>
                 <Input
                   className='mt-1'
-                  type='email'
-                  placeholder=''
+                  type='text'
+                  placeholder='123456789'
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  id="loginMatricula"
                 />
               </Label>
 
@@ -41,7 +76,10 @@ function LoginPage() {
                 <Input
                   className='mt-1'
                   type='password'
-                  placeholder='**********'
+                  placeholder='***************'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  id="loginSenha"
                 />
               </Label>
 
