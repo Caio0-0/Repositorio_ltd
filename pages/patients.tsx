@@ -10,6 +10,8 @@ import RoundIcon from 'example/components/RoundIcon'
 import Layout from 'example/containers/Layout'
 import response, { ITableData } from 'utils/demo/tableData'
 import { ChatIcon, CartIcon, MoneyIcon, PeopleIcon } from 'icons'
+import AuthenticationCheck from "example/components/AuthenticationCheck";
+import { useRouter } from 'next/router';
 
 import {
   TableBody,
@@ -66,7 +68,15 @@ function Forms() {
     setData(response.slice((page - 1) * resultsPerPage, page * resultsPerPage))
   }, [page])
 
+
+
+   // Verifique se o usuário está autenticado
+
+
   return (
+  
+
+      
     <Layout>
       <PageTitle>Prontuário</PageTitle>
 
@@ -104,6 +114,8 @@ function Forms() {
      
         
     </Layout>
+
+
   )
 }
 

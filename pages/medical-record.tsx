@@ -13,6 +13,7 @@ import SectionTitle from 'example/components/Typography/SectionTitle';
 import Layout from 'example/containers/Layout';
 import { MailIcon } from 'icons';
 
+
 interface Report {
   date: string;
   number: number;
@@ -58,6 +59,8 @@ const Forms: React.FC = () => {
   };
 
   return (
+
+     
     <Layout>
       <PageTitle>Protuario do paciente</PageTitle>
       <div className="flex items-center">
@@ -65,7 +68,7 @@ const Forms: React.FC = () => {
           <span>Relatório da sessão:</span>
           <Textarea
             className="mt-1 h-60"
-            rows="nnp"
+          
             placeholder="Enter some long form content."
             value={newText}
             onChange={(e) => setNewText(e.target.value)}
@@ -113,7 +116,9 @@ const Forms: React.FC = () => {
           
         </div>
       ))}
+     
     </Layout>
+   
   );
 };
 

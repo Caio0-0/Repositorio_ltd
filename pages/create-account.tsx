@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { GithubIcon, TwitterIcon } from 'icons'
+
 import { Input, Label, Button, WindmillContext } from '@roketid/windmill-react-ui'
 
 function CrateAccount() {
@@ -48,7 +48,7 @@ function CrateAccount() {
               </Label>
 
               <Link
-                  href='/login'
+                  href='/login-user'
                   passHref={true}
                 >
                 <Button block className="mt-4">
@@ -61,7 +61,7 @@ function CrateAccount() {
             
 
               <p className="mt-4">
-                <Link href="/login">
+                <Link href="/login-user">
                   <a
                     className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
                   >
